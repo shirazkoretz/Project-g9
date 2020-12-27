@@ -1,0 +1,195 @@
+.grid-container { /* dividing the page to differnent parts of a grid  */
+    display: grid;
+    grid-gap: 10px;
+    padding: 30px;
+    grid-template-rows: 150px;
+    grid-template-areas:
+   'header header header header header'
+   'nav nav nav nav nav'
+   'form form form image image'
+   'footer footer footer footer footer';
+}
+
+*{ /* assigning a font family and box size to the whole page  */
+  box-sizing: border-box;
+  font-family:'Amatic SC'
+    }
+    
+
+
+.header{ /* Style of the header   */
+grid-area:header; 
+text-align:center;
+font-weight: bold; 
+font-size: 90px;
+}
+.text {/* Style of the header name and content    */
+  color: rgb(5, 5, 5);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.navigation { /* Style of the navigation bar   */
+grid-area:nav;   
+color:black; 
+text-align:center; 
+background-color:rgb(124, 84, 98, 0.8);
+font-size: 30px; 
+font-weight: bold;
+}
+
+
+
+   body { /* Style of the body of the page   */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+
+ .details { /* Style of the form in general    */
+  grid-area: form;
+  width: 100%;
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+}
+.fieldSet{ /* Style of the fieldset of the form- (the container of the form)   */
+  background: rgba(124, 84, 98, 0.8);
+  border-radius: 5px;
+      box-shadow: 0 15px 4px rgba(0,0,0,0.06);
+      border: 3px solid rgb(10, 10, 10);
+
+  }
+  input,
+  label, textarea, select { /* Style of the labels, input and textarea of the form    */
+      margin: .4rem 0;
+      border-radius: 5px;
+      box-shadow: 0 15px 4px rgba(0,0,0,0.06);
+      width: 400px;
+      height: 30px;
+      color: black;
+      font-size: medium;
+      font-weight: bold;
+      display: block;
+  }
+  .group .label { /* Style of the labels, input and textarea of the form    */
+    color: rgb(19, 3, 3);
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .comments, .orderTime { /* Style of the picklist and text area   */
+    color: rgb(19, 3, 3);
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 15px 4px rgba(0,0,0,0.06);
+
+  }
+  
+  .details .tab { /* Style the inside of the form- header and padding  */
+      font-size: 22px;
+      margin-right: 15px;
+      padding-bottom: 5px;
+      margin: 0 15px 10px 0;
+      display: inline-block;
+      border-bottom: 2px solid transparent;
+    }
+    
+
+     .group { /* the spacing between the label and input  */
+      margin-bottom: 20px;
+    }
+
+     input.invalid { /* Style of the input if not valid    */
+      background-color: #ca2c2c;
+    }
+    
+
+        /* Hide all steps by default: */
+  .page {
+   display: none;
+  }
+        .step {    /* style the steps in the form: */
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbbbbb;
+          border: none;
+          border-radius: 50%;
+          display: inline-block;
+          opacity: 0.5;
+        }
+        
+        /* Mark the active step: */
+        .step.active {
+          opacity: 1;
+        }
+        
+        /* Mark the steps that are finished and valid: */
+        .step.finish {
+          background-color: #151616;
+        }
+
+        .navbutton{  /* style the button of the next, previous and submit buttons: */
+          border: none;
+        border-radius: 25px;
+        background: rgba(163, 154, 154, 0.925);
+        box-shadow: 0 15px 4px rgba(0,0,0,0.06);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 35px;
+        font-weight: bold;
+        }
+
+        .images{ /* Style of the div of the order summary    */
+          grid-area:image;
+          margin-top: 100px;
+          text-align: center;
+          width: 600px;
+          font-size: 27px;
+          border: 2px solid rgb(10, 10, 10);
+          background-color: silver;
+        
+        }
+        .hr {  /* Style of the line between the table and the sum    */
+          height: 1px;
+          margin: 60px 0 50px 0;
+          background: rgba(214, 210, 210, 0.5);
+          
+        }
+        .footer {  /* Style of the footer    */
+          text-align:left; 
+          grid-area:footer; 
+          background-color:rgb(124, 84, 98, 0.8);
+          margin-top: 130px;
+        }
+          .contact{ /* Style of the text in the footer   */
+            text-align:center; 
+            font-size: 20px;   
+          }
+        
+              
+               
+    
+
+ 
+        
+        
+        
+
+        
+
+        
+    
+ 
+
+
+  

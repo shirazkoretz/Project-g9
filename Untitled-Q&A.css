@@ -1,0 +1,144 @@
+.Grid { /* dividing the page to differnent parts of a grid  */
+  display: grid;
+  height: 100%;
+  font-family: Tahoma;
+  grid-gap: 20px;
+  padding: 10px;
+ 
+  
+  
+  grid-template-areas: "Header Header  Header Header Header"
+                          "nav nav nav nav nav"
+                          "Q1 Q1 Q1 Q1 P" 
+                           "Q2 Q2 Q2 Q2 P"
+                           " Q3 Q3 Q3 Q3 P"
+                           " Q4 Q4 Q4 Q4 P"
+                           " Q5 Q5 Q5 Q5 P"
+                           "footer footer footer footer footer";
+ 
+}
+:root {
+  --Peper: rgba(124, 84, 98, 0.60);
+}
+
+
+*{ /* assigning a font family and box size to the whole page  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Amatic SC'
+    }
+
+.Header{ /* Style of the header   */
+  grid-area:Header; 
+  text-align:center;
+  font-weight: bold; 
+  font-size: 90px;
+}
+
+.navigation { /* Style of the navigation   */
+  color:black; 
+  text-align:center; 
+  padding: 20px;
+  grid-area:nav; 
+  background-color:rgb(124, 84, 98, 0.8);
+  font-size: 30px; 
+  font-weight: bold;}
+  
+.P{ /* Style of the picture area in thr right   */
+    grid-area:P; 
+  height: 500px;
+  padding: 10px;
+  margin-left: 80px;
+ 
+   
+  }
+  .Picture{ /* Style of the picture   */
+    border: 3px solid black;
+    border-radius: 5%;
+  }
+  #qustion{ /*general Style of the questions   */
+     background-color: var(--Peper); height: 100px;font-size: 30px;
+    }
+
+.Q1{ /* question 1  */
+  grid-area:Q1;
+  padding: 10px;
+ 
+}
+.Q2{ /* question 2  */
+    grid-area:Q2;
+    padding: 10px;
+
+  }
+  .Q3{ /* question 3  */
+    grid-area:Q3;
+    padding: 10px;
+
+
+  }
+  .Q4{ /* question 4  */
+    grid-area:Q4;
+    padding: 10px;
+
+  }
+  .Q5{ /* question 5  */
+    grid-area:Q5;
+    padding: 10px;
+
+  }
+  .Button{ /* style of the + button  */
+    background-color:var(--whiteTrans);
+    border: none;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    animation: pluse 2s infinite;
+    font-size: 30px;
+  }
+  .Answer{ /* style of the answers  */
+    background-color: rgba(255, 255, 255, 0.65);
+    height: 35px;
+   
+  }
+  /*Facbook and google maps logo- bellow the picture in the right*/
+  .socialmedia{
+    margin-left: 110px;
+    margin-top: 5px;
+  
+  
+ }
+ .footer { /*style of footer*/
+  text-align:left; 
+  grid-area:footer; 
+  background-color:rgb(124, 84, 98, 0.8);
+}
+  .Details{
+    text-align:center; 
+    font-size: 20px;
+    
+  }
+  input /* Style of the search input */
+  {
+     margin: .4rem 0;
+     border-radius: 5px;
+     box-shadow: 0 15px 4px rgba(0,0,0,0.06);
+     width: 120px;
+  
+  }  
+  
+  
+  button{ /* Style of the ok button */
+      border: none;
+      border-radius: 25px;
+      background: rgba(163, 154, 154, 0.925);
+      box-shadow: 0 15px 4px rgba(0,0,0,0.06);
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 27px;
+      font-weight: bold;
+    }

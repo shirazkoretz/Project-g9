@@ -1,0 +1,74 @@
+.Grid { /* dividing the page to differnent parts of a grid  */
+  display: grid;
+  display: grid;
+    grid-template-rows: 150px;
+  height: 100%;
+  grid-gap: 10px;
+  padding: 30px;
+  text-align: center;
+  grid-template-areas: "Header Header  Header Header Header"
+                          "nav nav nav nav nav"
+                          "P M M M M" 
+                           "P M M M M"
+                        "footer footer footer footer footer";
+ 
+}
+
+* { /* assigning a font family and box size to the whole page  */
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  font-family:'Amatic SC'
+}
+.Header{  /* Style of the header   */
+  grid-area:Header; 
+  text-align:center;
+  font-weight: bold; 
+  font-size: 90px;
+}
+.navigation {  /* Style of the navigation   */
+  grid-area:nav; 
+  color:black; 
+  padding: 20px;
+  text-align:center; 
+  background-color:rgb(124, 84, 98, 0.8);
+  font-size: 30px; 
+  font-weight: bold;
+}
+
+
+
+:root {
+  --whiteTrans: rgba(124, 84, 98, 0.60);
+}
+
+
+.p{/* style of the picture  */
+  grid-area:P; 
+  height: 500px;
+  width:max-content;
+  padding: 20px;
+ 
+}
+
+.Main{ /* Style of the main paragraph   */
+  grid-area:M;
+  height: 400px;
+  width: 800 px;
+  background-color: var(--whiteTrans);
+  font-size: 25px;
+  text-align: center;
+ 
+}
+.footer {  /* Style of the footer   */
+  grid-area:footer;
+  text-align:left; 
+  background-color:rgb(124, 84, 98, 0.8);
+  margin-top: 110px;
+
+}
+
+  .Details{ /* Style of the content in the footer   */
+    text-align:center; 
+    font-size: 20px;
+    
+  }

@@ -1,0 +1,282 @@
+
+.grid-container{ /* dividing the page to differnent parts of a grid  */
+    display: grid;
+    grid-gap: 10px;
+    margin:80px;
+    padding: 30px;
+    grid-template-rows: 150px;
+    margin-top: 50px;
+  
+    grid-template-areas:
+    'header header header header header'
+    'nav nav nav nav nav'
+    'about about about about about'
+    'left left center right right'
+    'left1 left1 center1 right1 right1'
+    'footer footer footer footer footer';
+    
+    }
+
+
+:root{
+    --whiteTrans:  rgb(124, 84, 98, 0.7) ;
+ 
+}
+*{ /* assigning a font family and box size to the whole page  */
+    font-family: 'Amatic SC';
+    box-sizing: border-box;
+
+}
+
+
+
+    
+    .header{ /* Style of the header   */
+            grid-area:header; 
+            margin-top: 0px;
+            text-align:center;
+            font-weight: bold; 
+            font-size: 90px;
+            border:0ch;
+          }
+          
+          .navigation { /* Style of the navigation bar   */
+            color:black; 
+            text-align:center;
+            margin-top: 0px; 
+            
+            grid-area:nav; 
+            background-color:rgb(124, 84, 98, 0.8);
+            font-size: 30px; 
+            font-weight: bold;}
+          
+           
+            .about{ /* style of the header about trays*/
+                grid-area: about;
+                background-color: rgb(124, 84, 98, 0.4);
+                height: 200px;
+                text-align: center;
+                font-weight: bold;
+                box-shadow: 10px 10px 5px grey;
+                font-size: 40px;
+                margin-top: 30px;
+            } 
+            
+            .trays_orders{  /*the div of the whole trays*/
+                grid-row: 6;
+                grid-column: 3;
+                background-color: var(--whiteTrans);
+                width: 400px;
+                height: 100px;
+                font-size: 40px;
+                margin-top: 80px;
+                border-radius: 5px;
+                box-shadow: 10px 10px 5px grey;
+                display: inline-block;
+               animation: pluse 2s infinite;
+               margin-top: 50px;
+               text-align: center;
+                  
+            }
+
+.item1{ /* tray 1*/
+        grid-area: left;
+        }
+.item2{ /* tray 2*/
+    grid-area: center;
+    margin-left: 45px;
+  }
+ .item3{ /* tray 3*/
+        grid-area: right;
+   }
+.item4{ /* tray 4*/
+    grid-area: left1;
+     }
+.item5{ /* tray 5*/
+grid-area: center1;
+margin-left: 45px;
+
+}
+.item6{ /* tray 6*/
+    grid-area: right1;
+}
+
+
+
+
+#cookie{
+    background-color: var(--whiteTrans);
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    table-layout: center; 
+    box-shadow: 10px 10px 5px grey;
+    margin-top: 70px;
+    
+}
+.heart{
+    float: left;
+    padding: 15px;
+    
+}
+
+
+@keyframes pluse {
+    0%, 100%{
+    background-color: rgb(197, 57, 197);
+    }
+    50%{
+      background-color: rgb(185, 176, 182);
+    }
+}
+
+/*   box-shadow: 0 15px 4px rgba(0,0,0,0.06);
+        border: 3px solid rgb(10, 10, 10);*/
+
+
+
+/* cookies animation*/
+#cookieIMG{
+    height: 140px;
+    width: 180px;
+   border:2px solid rgb(71, 63, 63);
+     
+}
+
+
+#cart{
+    padding: 0px;
+}
+body{
+    margin: 0;
+    padding:0;
+   
+}
+section{
+    width:100%;
+    height: 100%;
+   
+}
+.set{
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.set div{
+    position: absolute;
+    display: block;
+}
+
+.set div:nth-child(1){
+    left: 0%;
+    animation:animate 9s linear infinite;
+    animation-delay: -12s;
+}
+.set div:nth-child(2){
+    left: 4%;
+    animation:animate 7s linear infinite;
+}
+.set div:nth-child(3){
+    left: 8%;
+    animation:animate 8s linear infinite;
+    animation-delay: -9s;
+
+}
+.set div:nth-child(4){
+    left: 0%;
+    animation:animate 6s linear infinite;
+}
+.set div:nth-child(5){
+    left: 4%;
+    animation:animate 8s linear infinite;
+    animation-delay: -7s;
+}
+.set div:nth-child(6){
+    left: 8%;
+    animation:animate 6s linear infinite;
+    animation-delay: -11s;
+
+}
+
+
+/* rigth side */
+
+.set div:nth-child(7){
+    right: 0%;
+    animation:animate 9s linear infinite;
+    animation-delay: -12s;
+}
+.set div:nth-child(8){
+    right: 4%;
+    animation:animate 7s linear infinite;
+}
+.set div:nth-child(9){
+    right: 8%;
+    animation:animate 8s linear infinite;
+    animation-delay: -9s;
+
+}
+.set div:nth-child(10){
+    right: 0%;
+    animation:animate 6s linear infinite;
+}
+.set div:nth-child(11){
+    right: 4%;
+    animation:animate 8s linear infinite;
+    animation-delay: -7s;
+}
+.set div:nth-child(12){
+    right: 8%;
+    animation:animate 6s linear infinite;
+    animation-delay: -11s;
+
+}
+
+
+@keyframes animate{
+   0%{
+       top: -10%;
+
+   } 
+  
+   100%{
+       top:200%;
+   }
+}
+
+input /* Style of the search input */
+{
+   margin: .4rem 0;
+   border-radius: 5px;
+   box-shadow: 0 15px 4px rgba(0,0,0,0.06);
+   width: 120px;
+
+}  
+
+
+button{ /* Style of the ok button */
+    border: none;
+    border-radius: 25px;
+    background: rgba(163, 154, 154, 0.925);
+    box-shadow: 0 15px 4px rgba(0,0,0,0.06);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bold;
+  }
+  
+
+  .footer { /* Style of the footer*/
+    text-align:left; 
+    grid-area:footer; 
+    background-color:rgb(124, 84, 98, 0.8);
+    margin-top: 220px;
+}
+.Details{/* Style of thecontnt of the footer */
+    text-align:center; 
+    font-size: 20px;
+    
+  }

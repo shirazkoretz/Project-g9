@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> marocookies</title>
+        <link rel = "stylesheet" href = "trays_stylesheet.css">
+        <script src= "cookies_functions.js"></script>  <!-- connection to JS functions -->
+        <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+        <style>a{color:black}
+          h1{text-align:center; font-size:50px;}
+          h2{text-align:center; font-stretch:normal;font-size:xx-large; font-weight: normal;}
+          </style >
+    </head>
+    <body>
+        <div class = "grid-container"> 
+          <div class="header">Moroccookies
+            <img src="תמונה1.jpg" style="width:150px; height:100px;">
+            
+          </div>
+           <!--This is the start of the navigation bar-->
+            <div class="navigation">
+                <ul>
+                <a href="Home.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+                <a href="about.html">About</a>&nbsp; &nbsp;	&nbsp;&nbsp;&nbsp;		
+                <a href="cookies.html">Cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="trays.html">Plates for events</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Q&A.html">Q&A</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="leave%20details.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="site-search">Search:</label>
+                <input type="search" id="site-search" name="q"
+                       aria-label="Search through site content">
+                <button>Ok</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="finish%20order.html">
+                  <img src="cart.gif" style="width:35px;height:35px;"></a>
+            </ul>
+            
+            </div>
+ <!--about the trays-->
+        <div class= "about">
+            <h>Our trayes perfect to all kind of events, henna, griefs, bar-mizva, and celebrate at home with friends or family!<br>
+                the trays remaining the nostalgic taste and vibe of Morocco<br>  </h>
+        </div>
+         <!--tray 1-->
+        <div class= "item1" id= "cookie">
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="tray1" onclick="changeImage(document.getElementById('tray1') )"  />
+        </p>
+        <h2 id="name"> colorful coconut tray </h2>
+        <img alt="cookie" src="colorful.JPG" id="cookieIMG" />
+        <h3 id="price">price: 80 ILS</h3>
+        <h3 id="details"> colorful coconut cookies with almonds and brown sugar</h3>
+        </div>
+           <!--tray 2-->
+        <div class= "item2" id= "cookie">
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="tray2" onclick="changeImage(document.getElementById('tray2') )"  />
+        </p>
+        <h2 id="name">sumsum party tray</h2>
+        <img alt="cookie" src="sumsum.jpg" id="cookieIMG" />
+        <h3 id="price">price: 100 ILS</h3>
+        <h3 id="details"> sweet sumsum cookies, with nuts and almonds</h3>
+        
+        </div>
+           <!--tray 3-->
+        <div class= "item3" id= "cookie">
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="tray3" onclick="changeImage(document.getElementById('tray3') )"  />
+        </p>
+        <h2 id="name">dates flowers</h2>
+        <img alt="cookie" src="dates.jpg" id="cookieIMG" />
+        <h3 id="price">price: 100 ILS</h3>
+        <h3 id="details">dates cookies with sweet surprises combine with sumsum cookies</h3>
+       
+        </div>
+        
+           <!--tray 4-->
+        <div class= "item4" id= "cookie">
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="tray4" onclick="changeImage(document.getElementById('tray4') )"  />
+        </p>
+        <h2 id="name">fresh sponges </h2>
+        <img alt="cookie" src="ספינג.jpg" id="cookieIMG" />
+        <h3 id="price">price: 120 ILS</h3>
+        <h3 id="details"> the classic sponges, hot from the oven</h3>
+        
+        </div>
+             <!--tray 5-->
+        <div class= "item5" id= "cookie">
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="tray5" onclick="changeImage(document.getElementById('tray5') )"  />
+        </p>
+        <h2 id="name">sweet kisses</h2>
+        <img alt="cookie" src="kisses.jpg" id="cookieIMG" />
+        <h3 id="price">price: 100 ILS</h3>
+        <h3 id="details">sweet kisses, dates and coconut cookies all together for amazing event</h3>
+       
+        </div>
+             <!--tray 6-->
+        <div class= "item6" id= "cookie">
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="tray6" onclick="changeImage(document.getElementById('tray6') )"  />
+        </p>
+        <h2 id="name">shebacias</h2>
+        <img alt="cookie" src="שבקיה.jpg" id="cookieIMG" />
+        <h3 id="price">price: 100 ILS</h3>
+        <h3 id="details">the sweet shebacia cookies with hoeny</h3>
+        
+        </div>
+
+           <!--button to leave order details-->
+      <div class="trays_orders">
+        <h1 href="trays_orders.html" target="_blank" onclick="window.open('trays_orders.html','orders','width=600,height=650')"
+            id="con" onmouseover="mouseOver(con)" onmouseout="mouseOut(con)">leave details to order trays</h1>
+          </div>
+         <section>
+            <div class="set">
+              <div><img src= "cookie.png" width="40px" height="40px"></div>
+              <div><img src= "cookie.png" width="50px" height="50px"></div>
+              <div><img src= "cookie.png" width="60px" height="60px"></div>
+              <div><img src= "cookie.png" width="70px" height="70px"></div>
+              <div><img src= "cookie.png" width="60px" height="60px"></div>
+              <div><img src= "cookie.png" width="90px" height="90px"></div>
+  
+              <div><img src= "cookie.png" width="40px" height="40px"></div>
+              <div><img src= "cookie.png" width="50px" height="50px"></div>
+              <div><img src= "cookie.png" width="60px" height="60px"></div>
+              <div><img src= "cookie.png" width="70px" height="70px"></div>
+              <div><img src= "cookie.png" width="60px" height="60px"></div>
+              <div><img src= "cookie.png" width="90px" height="90px"></div>
+            </div>
+          </section>
+<!-- This is the footer -->
+          <div class="footer">
+            <div class="Details">
+              © 2020 Moroccookies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy policy<br>
+              Moroccookies@gmail.com
+            </div>
+           <!-- content of footer -->
+            &nbsp;&nbsp;
+          <a href="https://www.facebook.com/marocookies/?ref=page_internal">
+            <img src="facebook (1).png" alt="Facebook" height="30px" width="30px">
+          </a> &nbsp;&nbsp;
+  
+          <a href="https://bit.ly/3a3W8Ka">
+           <img src="google-maps (2).png" alt="Google maps" height="30px" width="30px">
+         </a>&nbsp;&nbsp;
+  
+        </div>
+  
+      </div>
+    </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> marocookies cookies options</title>
+        <link rel = "stylesheet" href = "cookies_stylesheet.css">
+        <script src= "cookies_functions.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+
+        <style>a{color:black}
+          h1{text-align:center; font-size:50px;}
+          h2{text-align:center; font-stretch:normal;font-size:xx-large; font-weight: normal;}
+          </style >
+    </head>
+    <body>
+      <div class = "grid-container"> 
+
+
+        <div class="header">Moroccookies
+          <img src="תמונה1.jpg" style="width:150px; height:100px;">
+          
+        </div>
+          <!--This is the start of the navigation bar-->
+          <div class="navigation">
+              <ul>
+              <a href="Home.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+              <a href="about.html">About</a>&nbsp; &nbsp;	&nbsp;&nbsp;&nbsp;		
+              <a href="cookies.html">Cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="trays.html">Plates for events</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="Q&A.html">Q&A</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="leave%20details.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label for="site-search">Search:</label>
+              <input type="search" id="site-search" name="q"
+                     aria-label="Search through site content">
+              <button>Ok</button>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="finish%20order.html">
+                <img src="cart.gif" style="width:35px;height:35px;"></a>
+          </ul>
+          
+          </div>
+
+
+        <div class= "item1" id= "cookie">       <!-- details per cookie 1 -->
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="imgClickAndChange1" onclick="changeImage(document.getElementById('imgClickAndChange1') )"  />
+        </p>
+        <h2 id="name"> coconut </h2>
+        <img alt="cookie" src="coconut.JPG" id="cookieIMG" />
+        <h3 id="price">price per 100 gram: 6 ILS</h3>
+        <h3 id="details"> coconut cookies with nuts and brown sugar</h3>
+        <img alt="cart" src="add-to-cart.png"  style="height: 30px; width: 30px" id="cart" onclick="addedToCart()" />
+        <label for="quantity"><b>quantity:</b></label>
+        
+        <select id="quantity" name="quantity"  >
+            <option value="0">gr</option> 
+            <option value="100">100gr</option>
+            <option value="150">150gr</option>
+            <option value="200">200gr</option>
+            <option value="250">250gr</option>
+            <option value="300">300gr</option>
+            <option value="500">500gr</option>
+          </select>
+        </div>
+
+        <div class= "item2" id= "cookie"> <!-- details per cookie 2 -->
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="imgClickAndChange2" onclick="changeImage(document.getElementById('imgClickAndChange2') )"  />
+        </p>
+        <h2 id="name"> shebacia </h2>
+        <img alt="cookie" src="shabkia_c.jpg" id="cookieIMG" />
+        <h3 id="price">price per 100 gram: 8 ILS</h3>
+        <h3 id="details"> cookies with hoeny perfect next to the coffee</h3>
+        <img alt="cart" src="add-to-cart.png"  style="height: 30px; width: 30px" id="cart" onclick="addedToCart()"/>
+        <label for="quantity"><b>quantity:</b></label>
+        
+        <select id="quantity" name="quantity"  >
+           <option value="0">gr</option> 
+            <option value="100">100gr</option>
+            <option value="150">150gr</option>
+            <option value="200">200gr</option>
+            <option value="250">250gr</option>
+            <option value="300">300gr</option>
+            <option value="500">500gr</option>
+          </select>
+        </div>
+
+        <div class= "item3" id= "cookie"> <!-- details per cookie 3 -->
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="imgClickAndChange3" onclick="changeImage(document.getElementById('imgClickAndChange3') )"  />
+        </p>
+        <h2 id="name"> dates </h2>
+        <img alt="cookie" src="tmarim.JPG" id="cookieIMG" />
+        <h3 id="price">price per 100 gram: 8 ILS</h3>
+        <h3 id="details"> cookies with dates fill, sweet and tasty</h3>
+        <img alt="cart" src="add-to-cart.png"  style="height: 30px; width: 30px" id="cart" onclick="addedToCart()"/>
+        <label for="quantity"><b>quantity:</b></label>
+        
+        <select id="quantity" name="quantity"  >
+          <option value="0">gr</option> 
+            <option value="100">100gr</option>
+            <option value="150">150gr</option>
+            <option value="200">200gr</option>
+            <option value="250">250gr</option>
+            <option value="300">300gr</option>
+            <option value="500">500gr</option>
+          </select>
+        </div>
+        
+
+        <div class= "item4" id= "cookie"> <!-- details per cookie 4 -->
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="imgClickAndChange4" onclick="changeImage(document.getElementById('imgClickAndChange4') )"  />
+        </p>
+        <h2 id="name4">chocolate chips</h2>
+        <img alt="cookie" src="chocolate.jpg" id="cookieIMG" />
+        <h3 id="price">price per 100 gram: 8 ILS</h3>
+        <h3 id="details"> vanilla cookies with sweet chocolate chips </h3>
+        <img alt="cart" src="add-to-cart.png"  style="height: 30px; width: 30px" id="cart" onclick="addedToCart()"/>
+        <label for="quantity"><b>quantity:</b></label>
+        
+        <select id="quantity" name="quantity"  >
+            <option value="0">gr</option> 
+            <option value="100">100gr</option>
+            <option value="150">150gr</option>
+            <option value="200">200gr</option>
+            <option value="250">250gr</option>
+            <option value="300">300gr</option>
+            <option value="500">500gr</option>
+          </select>
+        </div>
+
+        <div class= "item5" id= "cookie"> <!-- details per cookie 5 -->
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="imgClickAndChange5" onclick="changeImage(document.getElementById('imgClickAndChange5') )"  />
+        </p>
+        <h2 id="name"> long cookies </h2>
+        <img alt="cookie" src="moroco.jpg" id="cookieIMG" />
+        <h3 id="price">price per 100 gram: 10 ILS</h3>
+        <h3 id="details"> the calssic moroccan cookie, fragile and crunchy</h3>
+        <img alt="cart" src="add-to-cart.png"  style="height: 30px; width: 30px" id="cart" onclick="addedToCart()" />
+        <label for="quantity"><b>quantity:</b></label>
+        
+        <select id="quantity" name="quantity"  >
+            <option value="0">gr</option> 
+            <option value="100">100gr</option>
+            <option value="150">150gr</option>
+            <option value="200">200gr</option>
+            <option value="250">250gr</option>
+            <option value="300">300gr</option>
+            <option value="500">500gr</option>
+          </select>
+        </div>
+
+        <div class= "item6" id= "cookie"> <!-- details per cookie 6 -->
+          <p>
+            <img alt="cookie" src="https://www.flaticon.com/svg/static/icons/svg/812/812327.svg" class="heart"
+                style="height: 20px; width: 20px" id="imgClickAndChange6" onclick="changeImage(document.getElementById('imgClickAndChange6') )"  />
+        </p>
+        <h2 id="name"> rifat </h2>
+        <img alt="cookie" src="rifat.jpg" id="cookieIMG" />
+        <h3 id="price">price per 100 gram: 8 ILS</h3>
+        <h3 id="details"> crispy cookies with anise taste, moroccan biscuits</h3>
+        <img alt="cart" src="add-to-cart.png"  style="height: 30px; width: 30px" id="cart" onclick="addedToCart()" />
+        <label for="quantity"><b>quantity:</b></label>
+        
+        <select id="quantity" name="quantity"  >
+         
+            <option value="0">gr</option>  
+            <option value="100" >100gr</option>
+            <option value="150">150gr</option>
+            <option value="200">200gr</option>
+            <option value="250">250gr</option>
+            <option value="300">300gr</option>
+            <option value="500">500gr</option>
+          
+          </select>
+        </div>
+        <!-- link to finish order -->
+       
+        <button class= "goToCart" id= "cookiesCart" onclick="window.location.href='finish%20order.html'">Go to cart</button>
+
+        <section> 
+          <div class="set">       <!-- pictures of cookies for design -->
+            <div><img src= "cookie.png" width="40px" height="40px"></div>
+            <div><img src= "cookie.png" width="50px" height="50px"></div>
+            <div><img src= "cookie.png" width="60px" height="60px"></div>
+            <div><img src= "cookie.png" width="70px" height="70px"></div>
+            <div><img src= "cookie.png" width="60px" height="60px"></div>
+            <div><img src= "cookie.png" width="90px" height="90px"></div>
+
+            <div><img src= "cookie.png" width="40px" height="40px"></div>
+            <div><img src= "cookie.png" width="50px" height="50px"></div>
+            <div><img src= "cookie.png" width="60px" height="60px"></div>
+            <div><img src= "cookie.png" width="70px" height="70px"></div>
+            <div><img src= "cookie.png" width="60px" height="60px"></div>
+            <div><img src= "cookie.png" width="90px" height="90px"></div>
+          </div>
+        </section>
+
+      <!-- This is the footer -->
+        <div class="footer">
+          <div class="Details">
+            © 2020 Moroccookies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy policy<br>
+            Moroccookies@gmail.com
+          </div>
+        <!-- content of footer -->
+          &nbsp;&nbsp;
+        <a href="https://www.facebook.com/marocookies/?ref=page_internal">
+          <img src="facebook (1).png" alt="Facebook" height="30px" width="30px">
+        </a> &nbsp;&nbsp;
+
+        <a href="https://bit.ly/3a3W8Ka">
+         <img src="google-maps (2).png" alt="Google maps" height="30px" width="30px">
+       </a>&nbsp;&nbsp;
+
+      </div>
+
+      </div>
+    </body>
+</html>

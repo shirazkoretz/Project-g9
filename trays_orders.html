@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> trays orders marocookies</title>
+        <link rel = "stylesheet" href = "trays_orders_stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+       
+    </head>
+    <body>
+ <div class = "grid-container"> 
+    <form id="orderform" action="/action_page.php" multistep="true">
+        
+          <div class="details">
+              <p style= font-size:30px> <b>Leave details to order trays</b></p>
+              <fieldset class="fieldSet">
+                  <p >
+                      <h2 id="fiilout">Please fill out the following information </h2>
+                  </p>
+              <div class="page">
+              <div class="group">
+                  <label for="Full name" class="label" >Full Name</label>
+                  <input id="Full name" type="text" class="input" required>
+                </div>
+                <div class="group">
+                  <label for="user" class="label">Email</label>
+                  <input id="email" type="text" class="input">
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">Phone Number</label>
+                  <input id="phone" type="text" class="input">
+                </div>
+                <div class="group">
+                <label for="comments" class="comments">Please write which trays you want to order</label>
+                <textarea id="comments" name="comments" cols="400" rows="8">
+                    </textarea>
+                </div>
+              </div>
+                
+              <div class="page">
+                  <div class="group">
+                      <label for="Order date" class="label">Order date</label>
+                      <input id="Order date" type="date" class="input">
+                    </div>
+                    
+                    <div class="group">
+                      <label for="Order time" class="label">Order time</label>
+                      <div class="orderTime">
+                      <select id="Order time" name="Order time" class="input">
+                  <option value="8To10"><b>08:00-10:00</b></option>
+                  <option value="10To12">10:00-12:00</option>
+                  <option value="12To14">12:00-14:00</option>
+                  <option value="14To16">14:00-16:00</option>
+                </select>
+              </div>
+                    </div>
+              </div>
+  
+              <div style="overflow:auto;">
+                  <div style="float:right;">
+                    <button type="button" id="prevBtn" class="navbutton" onclick="nextPrev(-1)" >Previous</button>
+                    <button type="button" id="nextBtn"  class="navbutton" onclick="nextPrev(1)">Next</button>
+                  
+                  </div>
+                  
+                </div>
+                <div style="text-align:center;margin-top:40px;">
+                  <span class="step"></span>
+                  <span class="step"></span>
+                </div>
+              </fieldset>
+                </div>
+               </form>
+               <script src= "finishorder.js"></script>
+ </div>
+    </body>
+</html>

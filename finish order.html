@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+    <head>
+        <style>a{color:black}
+            h1{text-align:center; font-size:50px;}
+            h2{text-align:center; font-stretch:normal;font-size:xx-large; font-weight: normal;}
+            </style >
+        <title> finish Order</title>
+        <link rel="stylesheet" href="finishOrder1.css">
+        <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="header">Morroccookies
+                <img src="תמונה1.jpg" style="width:150px;height:100px;">
+            </div>
+        <!--This is the start of the navigation bar-->
+            <div class="navigation">
+                <ul>
+                <a href="Home.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		
+                <a href="about.html">About</a>&nbsp; &nbsp;	&nbsp;&nbsp;&nbsp;		
+                <a href="cookies.html">Cookies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="trays.html">Plates for events</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Q&A.html">Q&A</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="leave%20details.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+               <a href="finish%20order.html">
+                <img src="cart.gif" style="width:35px;height:35px;"></a>			
+            </ul></div>
+            <!--This is the start of the form-->
+        <form id="orderform" action="/action_page.php" multistep="true">
+        <div class="details">
+            <p style= font-size:30px> <b>Finish your order </b></p>
+            <fieldset class="fieldSet">
+                <p >
+                    <h2 id="fiilout">Please fill out the following information </h2>
+                </p>
+            <div class="page">
+            <div class="group">
+                <label for="Full name" class="label" >Full Name</label>
+                <input id="Full name" type="text" class="input" required>
+              </div>
+              <div class="group">
+                <label for="user" class="label">Email</label>
+                <input id="email" type="email" class="input">
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Phone Number</label>
+                <input id="phone" type="text" class="input">
+              </div>
+              <div class="group">
+              <label for="comments" class="comments">Additional comment about the order</label>
+              <textarea id="comments" name="comments" cols="400" rows="8">
+                  </textarea>
+              </div>
+            </div>
+              
+            <div class="page">
+                <div class="group">
+                    <label for="Order date" class="label">Order date</label>
+                    <input id="Orderdate" type="date" class="input">
+                  </div>
+                  
+                  <div class="group">
+                    <label for="Order time" class="label">Order time</label>
+                    <div class="orderTime">
+                    <select id="Order time" name="Order time" class="input">
+                <option value="8To10"><b>08:00-10:00</b></option>
+                <option value="10To12">10:00-12:00</option>
+                <option value="12To14">12:00-14:00</option>
+                <option value="14To16">14:00-16:00</option>
+              </select>
+            </div>
+                  </div>
+            </div>
+              <!--This div is responisibel for the step of the forms by JS-->
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                  <button type="button" id="prevBtn" class="navbutton" onclick="nextPrev(-1,phone)" >Previous</button>
+                  <button type="button" id="nextBtn"  class="navbutton" onclick="nextPrev(1,phone)">Next</button>
+                
+                </div>
+                
+              </div>
+              <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
+            </fieldset>
+              </div>
+             </form>
+             <script src="finishorder.js"></script> <!--This is theconnection to the JS functions-->
+
+          <!--this div contains the summary of your order- organized in a table-->
+             <div class="images">
+              <h3>Order details</h3>   
+              <table width="90%" cellspacing="7">
+                <thead>
+                <th width="100">Order Item</th>
+                <th width="150">Product Picture</th>
+                <th width="200">Product Name</th>
+                <th width="150">Quantity</th>
+                <th width="150">Price</th>
+
+                </thead>
+                <tbody>
+                <tr>
+                <td>1</td>
+                <td><img src="cookie.jpg" width=50px height="50px"></td>
+                <td>Date cookie</td>
+                <td>70 gr</td>
+                <td>90</td>
+
+                </tr>
+                <tr>
+                <td>2</td>
+                <td><img src="cookiessss.jpg" width=50px height="50px"></td>
+                <td>Choclate cookie</td>
+                <td>10 gr</td>
+                <td>20</td>
+
+                </tr>
+                </tbody>
+                
+                </table>
+                <div class="hr"></div>
+                <h3>Order sum: 110 ILS</h3>
+            </div>
+            <!--This is the start of the footer-->
+            <div class="footer">
+              <div class="contact">
+                © 2020 Moroccookies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy policy<br>
+                Moroccookies@gmail.com
+              </div>
+            
+              &nbsp;&nbsp;
+            <a href="https://www.facebook.com/marocookies/?ref=page_internal">
+              <img src="facebook (1).png" alt="Facebook" height="30px" width="30px">
+            </a> &nbsp;&nbsp;
+        
+            <a href="https://bit.ly/3a3W8Ka">
+             <img src="google-maps (2).png" alt="Google maps" height="30px" width="30px">
+           </a>&nbsp;&nbsp;
+        
+          </div>
+
+
+
+              </div>
+    </body>
+    </html>
+
+
+    
+  
+</div>
+</body>
+</html>
+    
